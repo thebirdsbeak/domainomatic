@@ -1,0 +1,2 @@
+# domainomatic
+cyber squatter squasher
