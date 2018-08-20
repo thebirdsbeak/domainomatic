@@ -68,7 +68,7 @@ class MainDialog(QtWidgets.QMainWindow, webview.Ui_MainWindow):
         if selected_file != "":
             return selected_file    
         else:
-            return "error"        
+            return "File opening aborted"
         
         
     def select_from_file(self):
@@ -86,7 +86,7 @@ class MainDialog(QtWidgets.QMainWindow, webview.Ui_MainWindow):
         '''Takes and saves screenshot'''
         driver = webdriver.Firefox()
         driver.get(self.current_domain)
-        image_name = self.current_domain.replace("http://", "").replace("https://", "")
+        image_name = self.current_domain.replace("http://", "").replace("https://", "") + ".png"
         driver.save_screenshot('./cases/'+image_name)
         webbrowser.open('./cases/'+image_name) # put to bottom of function if default browser is firefox
         driver.close() # put to bottom of function if default browser not firefox
@@ -132,8 +132,11 @@ class MainDialog(QtWidgets.QMainWindow, webview.Ui_MainWindow):
         if self.inactiveCheck.isChecked() == True:
             template_data["inactive"] = True
         self.textBrowser.append(str(template_data))
-            
-                   
+        with open(file_name, "w") as updated_config:
+            updated_config.write(str(template_data))
+
+
+
     def open_domain_case(self):
         '''Open existing case - currently doesn't load it'''
         filename = QtWidgets.QFileDialog.getOpenFileName(self, "Choose source", "./cases")
@@ -172,6 +175,7 @@ class MainDialog(QtWidgets.QMainWindow, webview.Ui_MainWindow):
                 print(str(e))
                 print("Data source error")
         self.current_domain = randomain
+        self.textBrowser.setText(randomain)
         
     
 # ~ Launch !!!

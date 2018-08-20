@@ -1,0 +1,26 @@
+1534791988274	geckodriver	INFO	geckodriver 0.20.1
+1534791988305	geckodriver	INFO	Listening on 127.0.0.1:39133
+1534791989448	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BYaFJySlwHww"
+1534791996465	Marionette	INFO	Listening on port 46477
+1534791996502	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 1469, Gecko_IOThread] WARNING: pipe error (64): Connection reset by peer: file /build/firefox/src/mozilla-unified/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1534792489154	geckodriver	INFO	geckodriver 0.20.1
+1534792489178	geckodriver	INFO	Listening on 127.0.0.1:57319
+1534792490323	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.WCMGQLyYVJj8"
+1534792496545	Marionette	INFO	Listening on port 38855
+1534792496589	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1534792580900	geckodriver	INFO	geckodriver 0.20.1
+1534792580922	geckodriver	INFO	Listening on 127.0.0.1:50311
+1534792582069	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.8axrzblnG92E"
+1534792588477	Marionette	INFO	Listening on port 35345
+1534792588531	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1534792605401	geckodriver	INFO	geckodriver 0.20.1
+1534792605425	geckodriver	INFO	Listening on 127.0.0.1:50583
+1534792606566	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.fk5Fn5a6DnOi"
+1534792612679	Marionette	INFO	Listening on port 36021
+1534792612743	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///modules/SavantShieldStudy.jsm, line 171: TypeError: this.addonListener is undefined
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
