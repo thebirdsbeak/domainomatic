@@ -126,8 +126,13 @@
       <item row="1" column="0">
        <widget class="QComboBox" name="servicesCombo">
         <property name="currentText">
-         <string>Similar services</string>
+         <string>Services</string>
         </property>
+        <item>
+         <property name="text">
+          <string>Services</string>
+         </property>
+        </item>
         <item>
          <property name="text">
           <string>Similar services</string>
@@ -138,18 +143,18 @@
           <string>Identical services</string>
          </property>
         </item>
-        <item>
-         <property name="text">
-          <string>N/A</string>
-         </property>
-        </item>
        </widget>
       </item>
       <item row="1" column="1">
        <widget class="QComboBox" name="marksCombo">
         <property name="currentText">
-         <string>Similar marks</string>
+         <string>Marks</string>
         </property>
+        <item>
+         <property name="text">
+          <string>Marks</string>
+         </property>
+        </item>
         <item>
          <property name="text">
           <string>Similar marks</string>
@@ -160,18 +165,18 @@
           <string>Identical marks</string>
          </property>
         </item>
-        <item>
-         <property name="text">
-          <string>N/A</string>
-         </property>
-        </item>
        </widget>
       </item>
       <item row="2" column="0">
        <widget class="QComboBox" name="priorityCombo">
         <property name="currentText">
-         <string>Low priority</string>
+         <string>Priority</string>
         </property>
+        <item>
+         <property name="text">
+          <string>Priority</string>
+         </property>
+        </item>
         <item>
          <property name="text">
           <string>Low priority</string>
@@ -194,8 +199,13 @@
       <item row="2" column="1">
        <widget class="QComboBox" name="jurisdictionCombo">
         <property name="currentText">
-         <string>EU</string>
+         <string>Jurisdiction</string>
         </property>
+        <item>
+         <property name="text">
+          <string>Jurisdiction</string>
+         </property>
+        </item>
         <item>
          <property name="text">
           <string>EU</string>
@@ -282,11 +292,11 @@
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>File</string>
+     <string>Fi&amp;le</string>
     </property>
     <addaction name="actionNew_Domain"/>
-    <addaction name="actionOpen_case"/>
     <addaction name="actionSave"/>
+    <addaction name="actionOpen_case"/>
     <addaction name="actionLoad_data"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
@@ -301,11 +311,12 @@
    </widget>
    <widget class="QMenu" name="menuAction">
     <property name="title">
-     <string>Action</string>
+     <string>Actio&amp;n</string>
     </property>
     <addaction name="actionLetter"/>
     <addaction name="actionEmail"/>
     <addaction name="actionUDRP"/>
+    <addaction name="actionWatch"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuAction"/>
@@ -314,57 +325,62 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionNew_Domain">
    <property name="text">
-    <string>New Domain</string>
+    <string>&amp;New Domain</string>
    </property>
   </action>
   <action name="actionQuit">
    <property name="text">
-    <string>Quit</string>
+    <string>&amp;Quit</string>
    </property>
   </action>
   <action name="actionUser_Guide">
    <property name="text">
-    <string>User Guide</string>
+    <string>&amp;User Guide</string>
    </property>
   </action>
   <action name="actionCredts">
    <property name="text">
-    <string>Credits</string>
+    <string>&amp;Credits</string>
    </property>
   </action>
   <action name="actionLicense">
    <property name="text">
-    <string>License</string>
+    <string>&amp;License</string>
    </property>
   </action>
   <action name="actionLetter">
    <property name="text">
-    <string>Letter</string>
+    <string>&amp;Letter</string>
    </property>
   </action>
   <action name="actionEmail">
    <property name="text">
-    <string>Email</string>
+    <string>&amp;Email</string>
    </property>
   </action>
   <action name="actionUDRP">
    <property name="text">
-    <string>UDRP</string>
+    <string>&amp;UDRP</string>
    </property>
   </action>
   <action name="actionOpen_case">
    <property name="text">
-    <string>Open Case</string>
+    <string>&amp;Open Case</string>
    </property>
   </action>
   <action name="actionLoad_data">
    <property name="text">
-    <string>Load data</string>
+    <string>&amp;Load data</string>
    </property>
   </action>
   <action name="actionSave">
    <property name="text">
-    <string>Save</string>
+    <string>&amp;Save</string>
+   </property>
+  </action>
+  <action name="actionWatch">
+   <property name="text">
+    <string>Watch</string>
    </property>
   </action>
  </widget>
